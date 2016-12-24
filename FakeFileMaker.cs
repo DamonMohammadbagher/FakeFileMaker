@@ -57,8 +57,11 @@ namespace FakeFileMaker
                 {
                     case "1":
                         {
-                            System.IO.File.Move(input_SFN, input_DFN + RLO + "tpp.exe");
-                            Console.WriteLine("Output : " + input_DFN + RLO + "tpp.exe");
+                            // little trick for better changing name ==> "mynewfileexe.cutionresume.ppt"                          
+                            System.IO.File.Move(input_SFN, input_DFN + RLO + "tpp.emuser" + RLO + "noituc.exe");
+                            
+                           // System.IO.File.Move(input_SFN, input_DFN + RLO + "tpp.exe");
+                           // Console.WriteLine("Output : " + input_DFN + RLO + "tpp.exe");
                             break;
                         }
                     case "2":
